@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:id="@+id/nav_graph"
+  app:startDestination="@id/homeFragment">
+
+  <fragment
+    android:id="@+id/homeFragment"
+    android:label="home_fragment"
+    android:name="com.example.imageviewer.ui.HomeFragment"
+    tools:layout="@layout/fragment_home">
+
+    <action
+      android:id="@+id/action_homeFragment_to_contentDetailFragment"
+      app:destination="@id/contentDetailFragment"
+      app:enterAnim="@anim/fade_in"
+      app:exitAnim="@anim/fade_out"
+      app:popEnterAnim="@anim/fade_in"
+      app:popExitAnim="@anim/fade_out" />
+
+  </fragment>
+
+  <fragment
+    android:id="@+id/contentDetailFragment"
+    android:label="content_detail_fragment"
+    android:name="com.example.imageviewer.ui.ContentDetailFragment"
+    tools:layout="@layout/fragment_content_detail">
+
+    <action
+      android:id="@+id/action_contentDetailFragment_to_imageViewerFragment"
+      app:destination="@id/imageViewerFragment" />
+
+    <argument
+      android:name="dataId"
+      app:argType="integer"
+      app:nullable="false" />
+  </fragment>
+
+  <fragment
+    android:id="@+id/imageViewerFragment"
+    android:label="image_viewer_fragment"
+    android:name="com.example.imageviewer.ui.ImageViewerFragment"
+    tools:layout="@layout/fragment_content">
+
+    <argument
+      android:name="imageUrl"
+      app:argType="string"
+      app:nullable="false" />
+  </fragment>
+
+</navigation>

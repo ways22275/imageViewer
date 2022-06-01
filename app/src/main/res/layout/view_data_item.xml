@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+  android:background="@color/grey">
+
+  <androidx.appcompat.widget.AppCompatImageView
+    android:id="@+id/imageView"
+    android:layout_width="0dp"
+    android:layout_height="0dp"
+    android:scaleType="centerCrop"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintDimensionRatio="1:1"/>
+
+  <androidx.appcompat.widget.AppCompatImageButton
+    android:id="@+id/collectButton"
+    android:layout_width="48dp"
+    android:layout_height="48dp"
+    android:background="@null"
+    android:src="@drawable/selector_collect"
+    android:visibility="gone"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    tools:src="@drawable/ic_heart_fill_m_primary"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

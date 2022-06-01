@@ -1,0 +1,16 @@
+<resources>
+  <string name="app_name">ImageViewer</string>
+
+  <string name="launch_state_init">初始化中..</string>
+  <string name="launch_state_update">更新伺服器資料中..</string>
+  <string name="launch_state_update_error">更新伺服器資料錯誤(%1$s)</string>
+  <string name="launch_state_update_success">更新伺服器資料成功</string>
+  <string name="launch_display_text_to_home">即將自動跳轉主頁</string>
+
+  <string name="home_tab_name_all">全部</string>
+  <string name="home_tab_name_all_with_count">全部(%1$d)</string>
+  <string name="home_tab_name_favorite">我的最愛</string>
+  <string name="home_tab_name_favorite_with_count">我的最愛(%1$d)</string>
+
+
+</resources>
